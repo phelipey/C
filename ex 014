@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main()
+{
+    float peso, excesso, multa;
+    printf("insira o peso em kg dos peixes: ");
+    scanf("%f", &peso);
+    excesso = peso - 50;
+    multa = excesso * 4;
+    printf("o excesso eh de %.2fkg e a multa vai custar RS%.2f", excesso, multa);
+    return 0;
+}
