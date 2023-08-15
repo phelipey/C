@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    float nota1, nota2, nota3, nota4, media;
+    printf("insira a nota do primeiro bimestre: ");
+    scanf("%f", &nota1);
+    printf("insira a nota do segundo bimestre: ");
+    scanf("%f", &nota2);
+    printf("insira a nota do terceiro bimestre: ");
+    scanf("%f", &nota3);
+    printf("insira a nota do quarto bimestre: ");
+    scanf("%f", &nota4);
+    media = (nota1 + nota2 + nota3 + nota4) / 4;
+    printf("a media foi: %.2f", media);
+    return 0;
+}
