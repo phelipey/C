@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    float altura, pesoH, pesoM;
+    printf("insira sua altura: ");
+    scanf("%f", &altura);
+    pesoH = (72.7*altura) - 58;
+    pesoM = (62.1*altura) - 44.7;
+    printf("se voce for homem seu peso ideal eh %.2fkg\nse voce for mulher seu peso ideal eh %.2fkg", pesoH, pesoM);
+    
+    return 0;
+}
