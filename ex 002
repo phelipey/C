@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    int num;
+    printf("insira um numero: ");
+    scanf("%d", &num);
+    printf("o numero inserido foi: %d", num);
+    return 0;
+}
