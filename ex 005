@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    float metros, centimetros;
+    printf("insira a medida em metros: ");
+    scanf("%f", &metros);
+    centimetros = metros * 100;
+    printf("%.2f em metros, em centimetros eh: %.2f", metros, centimetros);
+    return 0;
+}
