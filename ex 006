@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    float raio, area;
+    printf("insira o raio do circulo: ");
+    scanf("%f", &raio);
+    area = M_PI * pow(raio, 2);
+    printf("a area eh igual a %.2f", area);
+    return 0;
+}
