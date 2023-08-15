@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    float salahr, salames, horas;
+    printf("insira seu salario por hora: ");
+    scanf("%f", &salahr);
+    printf("insira suas horas trabalhadas durante o mes: ");
+    scanf("%f", &horas);
+    salames = salahr * horas;
+    printf("seu salario por mes eh %.2f reais", salames);
+
+    return 0;
+}
