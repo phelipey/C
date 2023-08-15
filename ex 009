@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    float farenheit, celsius;
+    printf("insira a temperatura em farenheit: ");
+    scanf("%f", &farenheit);
+    celsius = (5 * (farenheit-32) / 9);
+    printf("a temperatura em graus celsius eh %.2f", celsius);
+    return 0;
+}
