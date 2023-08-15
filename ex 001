@@ -1,0 +1,9 @@
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+#include <stdio.h>
+
+int main() {
+    printf("Hello World");
+    return 0;
+}
