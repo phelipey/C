@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main()
+{
+    float porhora, nmrhoras, salariobruto, ir, inss, sindicato, salario;
+    printf("insira quanto ganha por hora: ");
+    scanf("%f", &porhora);
+
+    printf("insira quantas horas trabalhou no mes: ");
+    scanf("%f", &nmrhoras);
+
+    salariobruto = porhora * nmrhoras;
+    ir = 11 * salariobruto / 100;
+    inss = 8 * salariobruto / 100;
+    sindicato = 5 * salariobruto / 100;
+    salario = salariobruto - ir - inss - sindicato;
+    
+    printf("+ Salario Bruto: R$%.2f\n- IR (11%): R$%.2f\n- INSS (8%): R$%.2f\n- Sindicato (5%): R$%.2f\n= Salario Liquido: R$%.2f", salariobruto, ir, inss, sindicato, salario);
+
+        return 0;
+}
