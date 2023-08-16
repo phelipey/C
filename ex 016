@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main()
+{
+    float areaparede, rendimento = 3, litrolata = 18, precolata = 80, precototal;
+    int latascomprar;
+
+    printf("digite a area da parede em metros quadrados: ");
+    scanf("%f", &areaparede);
+
+    latascomprar = ceil(areaparede / (rendimento * litrolata));
+    precototal = latascomprar * precolata;
+
+    printf("voce deve comprar %i lata(s) custando R$%.2f", latascomprar, precototal);
+        return 0;
+}
