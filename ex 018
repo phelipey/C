@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    float tamanhoMB,
+    velocidadembps,
+    tempo;
+
+    printf("insira o tamanho do arquivo em MB: ");
+    scanf("%f", &tamanhoMB);
+    printf("insira a velocidade da internet em Mbps: ");
+    scanf("%f", &velocidadembps);
+
+    tempo = tamanhoMB / velocidadembps;
+    printf("o tempo estimado para o download eh de %.0f segundos", tempo);
+    return 0;
+}
