@@ -1,0 +1,23 @@
+/*
+Faça um Programa que peça um valor e mostre na tela se o valor é
+positivo ou negativo.
+*/
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    int valor;
+
+    printf("insira o valor: ");
+    scanf("%d", &valor);
+
+    if (valor > 0) {
+        printf("o valor eh positivo");
+    }
+    else {
+        printf("o valor eh negativo");
+    }
+    return 0;
+}
