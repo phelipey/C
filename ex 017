@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+      float rend_tinta = 6,
+      litroslata = 18,
+      precolata = 80,
+      litrosgalao = 3.6,
+      precogalao = 25,
+      metros,
+      rendimentolata = rend_tinta * litroslata,
+      rendimentogalao = rend_tinta * litrosgalao,
+      precolatas,
+      precogaloes,
+      latas,
+      galoes,
+      precolatasegaloes;
+
+      int apenaslatas,
+      apenasgaloes,
+      lat,
+      gal;    
+      printf("insira o tamanho da area em metros: ");
+      scanf("%f", &metros);
+
+      apenaslatas = ceil(metros / rendimentolata);
+      latas = ceil(apenaslatas * precolata);
+      apenasgaloes = ceil(metros / rendimentogalao);
+      galoes = ceil(apenasgaloes * precogalao);
+
+      lat = floor(metros / rendimentolata);
+      gal = ceil(((int)metros % (int)rendimentolata) / rendimentogalao);
+      precolatas = lat * precolata;
+      precogaloes = gal * precogalao;
+      precolatasegaloes = precolatas + precogaloes;
+
+
+      printf("para pintar a area inserida comprando apenas latas, devera comprar %d latas, custando %.2f reais\n", apenaslatas, latas);
+      printf("para pintar a area inserida comprando apenas galoes, devera comprar %d galoes, custando %.2f reais\n", apenasgaloes, galoes);
+      printf("para pintar a area inserida comprando ambos, devera comprar %d latas e %d galoes, custando %.2f reais", lat, gal, precolatasegaloes);
+      return 0;
+}
