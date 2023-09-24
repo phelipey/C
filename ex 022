@@ -1,0 +1,23 @@
+/*
+Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+*/
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    char letra;
+    printf("digite uma letra: ");
+    scanf("%c", &letra);
+    
+    letra = toupper(letra);
+
+    if (letra == 'A' or letra == 'E' or letra == 'I' or letra == 'O' or letra == 'U') {
+        printf("a letra eh uma vogal");
+    }
+    else {
+        printf("a letra eh uma consoante");
+    }
+    return 0;
+}
