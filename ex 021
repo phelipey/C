@@ -1,0 +1,24 @@
+/*
+Faça um Programa que verifique se uma letra digitada é "F" ou "M".
+Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+*/
+#include <stdio.h>
+#include <ctype.h>
+#include <cmath>
+#include <cstring>
+
+int main() {
+    char sexo;
+    printf("insira seu sexo com F ou M: ");
+    scanf("%c", &sexo);
+    if (sexo == 'F' or sexo == 'f') {
+        printf("seu sexo e feminino");
+    }
+    else if (sexo == 'M' or sexo == 'm') {
+        printf("seu sexo e masculino");
+    }
+    else {
+        printf("sexo invalido");
+    }
+    return 0;
+}
